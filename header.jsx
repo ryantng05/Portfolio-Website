@@ -1,42 +1,40 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import {Instagram, Github, Linkedin, Menu, X } from 'lucide-react';
 
-export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="container px-4 py-4 flex items-center justify-between">
-        {/* Logo / Brand */}
-        <div className="text-2xl font-bold text-gray-800">MyBrand</div>
+    <>
+      {/* Mobile Toggle Button */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="md:hidden fixed top-4 left-4 z-50 focus:outline-none bg-white p-2 rounded shadow"
+        aria-label="Toggle menu"
+      >
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">About</a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">Services</a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
-        </nav>
+      {/* Sidebar Navigation */}
+      <aside className={`fixed inset-y-0 left-0 bg-white shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out w-35`}>
+        <div className="px-6 py-4">
+          {/* Logo / Brand */}
+          <div className="text-2xl font-bold text-gray-800 mb-70">Ryan</div>
+          {/* Navigation Links */}
+          <nav className="flex flex-col space-y-8 mb-75">
+            <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">About</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">Projects</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
+          </nav>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <nav className="md:hidden bg-white shadow-inner">
-          <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
-          <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
-          <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Services</a>
-          <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact</a>
-        </nav>
-      )}
-    </header>
+          <nav className="flex flex-col space-y-1">
+            <a href="https://www.linkedin.com/in/ryan-tang-ab55192b1/" className="text-gray-600 hover:text-gray-900"><Linkedin/></a>
+            <a href="https://github.com/ryantng05" className="text-gray-600 hover:text-gray-900"><Github/></a>
+            <a href="http://instagram.com/ryan.tng" className="text-gray-600 hover:text-gray-900"><Instagram/></a>
+          </nav>
+        </div>
+      </aside>
+    </>
   );
 }
