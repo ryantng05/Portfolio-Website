@@ -16,19 +16,19 @@ export default function Sidebar() {
       </button>
 
       {/* Sidebar Navigation */}
-      <aside className={`fixed inset-y-0 left-0 bg-white shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out w-35`}>
+      <aside className={`fixed inset-y-0 left-0 bg-white shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out w-25`}>
         <div className="px-6 py-4">
           {/* Logo / Brand */}
-          <div className="text-2xl font-bold text-gray-800 mb-70">Ryan</div>
+          <div className="text-2xl font-bold text-gray-800 mb-70 text-center">Ryan</div>
           {/* Navigation Links */}
-          <nav className="flex flex-col space-y-8 mb-75">
+          <nav className="flex flex-col space-y-8 mb-75 items-center">
             <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">About</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">Projects</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
           </nav>
 
-          <nav className="flex flex-col space-y-1">
+          <nav className="flex flex-col space-y-1 items-center">
             <a href="https://www.linkedin.com/in/ryan-tang-ab55192b1/" className="text-gray-600 hover:text-gray-900"><Linkedin/></a>
             <a href="https://github.com/ryantng05" className="text-gray-600 hover:text-gray-900"><Github/></a>
             <a href="http://instagram.com/ryan.tng" className="text-gray-600 hover:text-gray-900"><Instagram/></a>
