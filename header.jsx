@@ -16,16 +16,16 @@ export default function Sidebar() {
       </button>
 
       {/* Sidebar Navigation */}
-      <aside className={`fixed inset-y-0 left-0 bg-white shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out w-25`}>
+      <aside className={`fixed inset-y-0 left-0 bg-white shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out w-25`}>
         <div className="px-6 py-4">
           {/* Logo / Brand */}
           <div className="text-2xl font-bold text-gray-800 mb-70 text-center">Ryan</div>
           {/* Navigation Links */}
           <nav className="flex flex-col space-y-8 mb-75 items-center">
-            <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">About</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Projects</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
+            <a href="/" className="text-gray-600 hover:text-gray-900">Home</a>
+            <a href="/about" className="text-gray-600 hover:text-gray-900">About</a>
+            <a href="/portfolio" className="text-gray-600 hover:text-gray-900">Portfolio</a>
+            <a href="/contact" className="text-gray-600 hover:text-gray-900">Contact</a>
           </nav>
 
           <nav className="flex flex-col space-y-1 items-center">
