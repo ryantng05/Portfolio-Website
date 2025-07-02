@@ -20,7 +20,7 @@ export default function Contact() {
           </p>
           <div className="flex space-x-6">
             <a
-              href="https://www.linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/ryantng05"
               target="_blank"
               rel="noopener noreferrer"
               className="text-yellow-400 hover:text-yellow-200 transition-colors"
@@ -28,7 +28,7 @@ export default function Contact() {
               <AiFillLinkedin size={64} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:ryant012015@gmail.com"
               className="text-yellow-400 hover:text-yellow-200 transition-colors"
             >
               <AiOutlineMail size={64} />
