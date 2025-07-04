@@ -37,12 +37,15 @@ export default function About() {
       const currentData = dataMap[category];
 
     return(
-        <>
-            <a id="about">
-                <div className="ml-50 mt-25 text-yellow-300 text-5xl mb-10">
+        <section className='min-h-screen
+        p-8
+        bg-gradient-to-b from-blue-800 to-teal-400
+        pt-1'>
+            <div>
+                <div className="ml-50 mt-25 font-bold text-yellow-400 text-5xl mb-10">
                     <h1>About me</h1>
                 </div>
-                <div className="ml-55">
+                <div className="ml-55 text-white">
                     <p>I am a very ambitious software developer with a unique background that has prepared me to <br></br>be a team player who communicates effectively, 
                         faces problems analytically and has the <br></br>technical skills to tackle any challenge.</p>
 
@@ -75,8 +78,8 @@ export default function About() {
                         ))}
                     </div>
                 </div>
-            </a>
-        </>
+            </div>
+        </section>
 
     );
 }

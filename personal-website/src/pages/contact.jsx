@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 export default function Contact() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-blue-900 to-blue-500 p-8">
+    <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 p-8">
       <h1 className="text-5xl font-bold text-yellow-400 mb-8 ml-50">Contact me</h1>
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
