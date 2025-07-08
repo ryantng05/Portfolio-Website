@@ -20,7 +20,7 @@ export default function Contact() {
           </p>
           <div className="flex space-x-6">
             <a
-              href="https://www.linkedin.com/in/ryantng05"
+              href="https://www.linkedin.com/in/ryan-tang-ab55192b1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-yellow-400 hover:text-yellow-200 transition-colors"
