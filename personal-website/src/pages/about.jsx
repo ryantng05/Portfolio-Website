@@ -7,19 +7,23 @@ const languages = [
   { label: 'Java', years: 4, colorClass: 'bg-orange-500' },
   { label: 'C#', years: 4, colorClass: 'bg-gray-600' },
   { label: 'Python', years: 3, colorClass: 'bg-yellow-400' },
+  { label: 'Javascript', years: 3, colorClass: 'bg-pink-500' },
   { label: 'HTML/CSS/JS', years: 3, colorClass: 'bg-green-400' },
   { label: 'C', years: 1, colorClass: 'bg-black' },
 ];
 
 const frameworks = [
-  { label: 'React', years: 2, colorClass: 'bg-blue-500' },
+  { label: 'React', years: 2.5, colorClass: 'bg-blue-500' },
   { label: 'Tailwind CSS', years: 1, colorClass: 'bg-teal-400' },
   { label: 'Node.js', years: 2, colorClass: 'bg-green-600' },
   { label: 'Spring Boot', years: 1, colorClass: 'bg-green-700' },
+  { label: 'NextJS', years: 1, colorClass: 'bg-purple-700' },
+  { label: 'DJango', years: 1, colorClass: 'bg-red-500' },
 ];
 
 const tools = [
-  { label: 'Git', years: 3.5, colorClass: 'bg-purple-600' },
+  { label: 'AWS', years: 1, colorClass: 'bg-yellow-600' },
+  { label: 'GitHub', years: 3.5, colorClass: 'bg-purple-600' },
   { label: 'Docker', years: 1, colorClass: 'bg-blue-700' },
   { label: 'VS Code', years: 3, colorClass: 'bg-yellow-300' },
   { label: 'Postman', years: 2, colorClass: 'bg-orange-300' },

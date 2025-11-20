@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import {
   Home,
   User,
+  Building2,
   Briefcase,
   Mail,
   Linkedin,
@@ -18,6 +19,7 @@ export default function Sidebar() {
   const navItems = [
     { to: '/', icon: Home, label: 'Home' },
     { to: '/about', icon: User, label: 'About' },
+    { to: '/work', icon: Building2, label: 'Work' },
     { to: '/portfolio', icon: Briefcase, label: 'Portfolio' },
     { to: '/contact', icon: Mail, label: 'Contact' },
   ];

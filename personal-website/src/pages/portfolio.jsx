@@ -2,28 +2,22 @@ import ProjectCard from '../components/projectcard';
 
 const projects = [
   {
-    title: 'Wrestling Team Manager',
-    tech: 'C#, Console App, Visual Studio',
-    image: '/images/exam_scheduler.png',
-    href: 'https://github.com/ryantng05/Wrestling_Team_Manager',
-  },
-  {
-    title: 'Minecraft Plugin Development',
-    tech: 'Java, SpigotMC, IntelliJ',
-    image: '/images/empor.png',
-    href: 'https://github.com/ryantng05/Minecraft-Plugin',
-  },
-  {
     title: 'PL Match Predictor',
-    tech: 'Python, scikit-learn, Pandas',
-    image: '/images/pl_predictor.png',
-    href: 'https://github.com/yourusername/pl-predictor',
+    tech: 'DJango,Python, scikit-learn, Pandas',
+    image: './src/assets/Premier-League-symbol.png',
+    href: 'https://github.com/ryantng05/PLWebsite',
   },
   {
-    title: 'PremierZone',
-    tech: 'ReactJS, PostgreSQL, Spring Boot',
-    image: '/images/premierzone.png',
-    href: 'https://github.com/yourusername/premierzone',
+    title: 'AI Code Reviewer',
+    tech: 'NextJS, Typescript, OpenAI API',
+    image: './src/assets/AICodeReviewer-page.jpg',
+    href: 'https://github.com/ryantng05/AiCodeReviewer',
+  },
+  {
+    title: 'Generative UI Designer',
+    tech: 'NextJS, Typescript, OpenAI API',
+    image: './src/assets/GenUIDesigner-page.webp',
+    href: 'https://github.com/ryantng05/GenerativeUIDesigner',
   },
   // add more projects...
 ];
