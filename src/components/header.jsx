@@ -37,7 +37,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded"></div>
-          <span className="font-bold text-lg text-white">Erik C.</span>
+          <span className="font-bold text-lg text-white">Ryan T.</span>
         </div>
 
         {/* Hamburger Menu Button */}
