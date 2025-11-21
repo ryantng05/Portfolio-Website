@@ -13,15 +13,15 @@ import {
   X,
 } from 'lucide-react';
 
-export default function Sidebar() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { to: '/', icon: Home, label: 'Home' },
-    { to: '/about', icon: User, label: 'About' },
-    { to: '/work', icon: Building2, label: 'Work' },
-    { to: '/portfolio', icon: Briefcase, label: 'Portfolio' },
-    { to: '/contact', icon: Mail, label: 'Contact' },
+    { to: '/', icon: Home, label: 'HOME' },
+    { to: '/about', icon: User, label: 'ABOUT' },
+    { to: '/work', icon: Building2, label: 'WORK' },
+    { to: '/portfolio', icon: Briefcase, label: 'PORTFOLIO' },
+    { to: '/contact', icon: Mail, label: 'CONTACT' },
   ];
 
   const socialItems = [
@@ -32,23 +32,70 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Mobile toggle button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-4 left-4 z-50 bg-white p-2 rounded shadow"
-        aria-label="Toggle sidebar"
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+      {/* Mobile Header Bar */}
+      <header className="md:hidden fixed top-0 left-0 right-0 h-16 bg-[#1e3a5f] z-40 flex items-center justify-between px-4 shadow-md">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded"></div>
+          <span className="font-bold text-lg text-white">Erik C.</span>
+        </div>
 
-      {/* Sidebar with solid dark background */}
-      <aside
+        {/* Hamburger Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-yellow-400 p-2"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </header>
+
+      {/* Mobile Full Screen Menu Overlay */}
+      <div
         className={`
-          fixed inset-y-0 left-0 w-16 bg-[#111111]
+          md:hidden fixed inset-0 bg-[#1a1a1a] z-50
           transform transition-transform duration-300 ease-in-out
-          ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0
-          flex flex-col justify-between text-white shadow-md
+          ${isOpen ? 'translate-y-0' : '-translate-y-full'}
+          flex flex-col items-center justify-center text-white
         `}
+      >
+        {/* Close Button */}
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-4 right-4 text-yellow-400 p-2"
+          aria-label="Close menu"
+        >
+          <X size={32} />
+        </button>
+
+        {/* Navigation Links */}
+        <nav className="flex flex-col items-center space-y-8">
+          {navItems.map(({ to, icon: Icon, label }) => (
+            <NavLink
+              key={to}
+              to={to}
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `group flex items-center space-x-3 text-lg
+                ${isActive ? 'text-yellow-400' : 'text-gray-400'}
+                hover:text-yellow-300 transition-colors`
+              }
+            >
+              <Icon size={24} />
+              <span className="font-medium tracking-wider">{label}</span>
+            </NavLink>
+          ))}
+        </nav>
+      </div>
+
+      {/* Desktop Sidebar - unchanged */}
+      <aside
+        className="
+          hidden md:flex
+          fixed inset-y-0 left-0 w-16 bg-[#111111]
+          flex-col justify-between text-white shadow-md
+        "
       >
         {/* Top: logo */}
         <div className="h-16 flex items-center justify-center border-b border-white/20">

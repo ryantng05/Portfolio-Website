@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e40af; /* blue-800 to match your gradient */
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}

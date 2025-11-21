@@ -94,7 +94,7 @@ export default function Work() {
         }
       `}</style>
       
-      <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 pl-20 md:pl-24 pr-4 py-8 md:p-8 md:pl-24">
+      <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 pt-16 md:pt-0 px-4 py-8 md:p-8 md:pl-24">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-8 md:mb-12 mt-4 md:mt-8">
             Work Experience

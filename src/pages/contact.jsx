@@ -52,7 +52,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 pl-20 md:pl-24 pr-4 py-8 md:p-8 md:pl-24">
+    <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 pt-16 md:pt-0 px-4 py-8 md:p-8 md:pl-24">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-8 mt-4 md:mt-8 text-center md:text-left">Contact me</h1>
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
