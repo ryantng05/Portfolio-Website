@@ -42,19 +42,21 @@ export default function About() {
 
     return(
         <section className='min-h-screen
-        p-8
-        bg-gradient-to-b from-blue-800 to-teal-400
-        pt-1'>
-            <div>
-                <div className="ml-50 mt-25 font-bold text-yellow-400 text-5xl mb-10">
+        px-4 py-8 md:p-8
+        bg-gradient-to-b from-blue-800 to-teal-400'>
+            <div className="max-w-7xl mx-auto">
+                <div className="mt-16 md:mt-20 font-bold text-yellow-400 text-3xl md:text-4xl lg:text-5xl mb-8 md:mb-10">
                     <h1>About me</h1>
                 </div>
-                <div className="ml-55 text-white">
-                    <p>I am a very ambitious software developer with a unique background that has prepared me to <br></br>be a team player who communicates effectively, 
-                        faces problems analytically and has the <br></br>technical skills to tackle any challenge.</p>
+                <div className="text-white">
+                    <p className="text-sm md:text-base leading-relaxed mb-8">
+                        I am a very ambitious software developer with a unique background that has prepared me to 
+                        be a team player who communicates effectively, faces problems analytically and has the 
+                        technical skills to tackle any challenge.
+                    </p>
 
                     {/* Category Buttons */}
-                    <div className="grid grid-cols-3 gap-4 mb-8 mt-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mb-8 mt-6 md:mt-10">
                         <CategoryButton
                         label="Languages"
                         onClick={() => setCategory('languages')}
@@ -70,7 +72,7 @@ export default function About() {
                     </div>
 
                     {/* Dynamic Skill Bars */}
-                    <div>
+                    <div className="space-y-2">
                         {currentData.map(({ label, years, colorClass }) => (
                         <SkillBar
                             key={label}

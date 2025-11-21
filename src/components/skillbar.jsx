@@ -25,11 +25,11 @@ export default function SkillBar({ label, years, maxYears = 4, colorClass = 'bg-
   const pct = calcPct(years, maxYears);
 
   return (
-    <div className="mb-6">
-      <div className="flex justify-between mb-1">
-        <span className="font-medium text-gray-800">{label}: {years} {years === 1 ? 'year' : 'years'}</span>
+    <div className="mb-4 md:mb-6">
+      <div className="flex justify-between mb-2">
+        <span className="font-medium text-white text-sm md:text-base">{label}: {years} {years === 1 ? 'year' : 'years'}</span>
       </div>
-      <div className={`h-4 rounded-full overflow-hidden ${showTrack ? 'bg-gray-200' : 'bg-transparent'}`} style={{ width: `${80}%`}}>
+      <div className={`h-3 md:h-4 rounded-full overflow-hidden w-full md:w-4/5 ${showTrack ? 'bg-gray-200' : 'bg-transparent'}`}>
         <div
           className={`${colorClass} h-full rounded-full transition-all duration-500`}
           style={{ width: `${pct}%` }}

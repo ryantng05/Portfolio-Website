@@ -28,19 +28,21 @@ const projects = [
 export default function Portfolio() {
 
 return (
-    <section className="min-h-screen p-8 bg-gradient-to-b from-blue-800 to-teal-400">
-      <h1 className="text-5xl font-bold text-yellow-400 mb-8 ml-50 mt-20">Portfolio</h1>
+    <section className="min-h-screen px-4 py-8 md:p-8 bg-gradient-to-b from-blue-800 to-teal-400">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-8 mt-16 md:mt-20">Portfolio</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ml-55">
-        {projects.map((proj) => (
-          <ProjectCard
-            key={proj.title}
-            image={proj.image}
-            title={proj.title}
-            tech={proj.tech}
-            href={proj.href}
-          />
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+          {projects.map((proj) => (
+            <ProjectCard
+              key={proj.title}
+              image={proj.image}
+              title={proj.title}
+              tech={proj.tech}
+              href={proj.href}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

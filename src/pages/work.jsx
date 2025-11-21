@@ -23,17 +23,17 @@ function WorkCard({ experience }) {
   return (
     <div 
       onClick={() => setIsExpanded(!isExpanded)}
-      className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-[1.02]"
+      className="bg-gray-800 rounded-lg p-4 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-[1.02]"
     >
       <div className="flex justify-between items-start mb-3">
         <div className="flex-1">
-          <h3 className="text-yellow-400 text-2xl font-bold mb-2">
+          <h3 className="text-yellow-400 text-xl md:text-2xl font-bold mb-2">
             {experience.company}
           </h3>
           {experience.role && (
-            <p className="text-gray-300 text-lg mb-2">{experience.role}</p>
+            <p className="text-gray-300 text-base md:text-lg mb-2">{experience.role}</p>
           )}
-          <div className="text-gray-400 text-sm flex items-center gap-2">
+          <div className="text-gray-400 text-xs md:text-sm flex items-center gap-2">
             {isExpanded ? (
               <>
                 <AiOutlineMinus size={16} />
@@ -56,20 +56,20 @@ function WorkCard({ experience }) {
         />
       </div>
 
-      <p className="text-yellow-400 font-semibold mb-3">{experience.date}</p>
+      <p className="text-yellow-400 font-semibold mb-3 text-sm md:text-base">{experience.date}</p>
 
       {isExpanded && (
         <div className="mt-4 space-y-3 transition-all duration-300 ease-in-out">
           {experience.details.map((detail, index) => (
             <div 
               key={index} 
-              className="flex items-start gap-3"
+              className="flex items-start gap-2 md:gap-3"
               style={{
                 animation: `fadeIn 0.3s ease-in-out ${index * 0.1}s both`
               }}
             >
               <span className="text-yellow-400 mt-1 flex-shrink-0">•</span>
-              <p className="text-white leading-relaxed">{detail}</p>
+              <p className="text-white leading-relaxed text-sm md:text-base">{detail}</p>
             </div>
           ))}
         </div>
@@ -94,13 +94,13 @@ export default function Work() {
         }
       `}</style>
       
-      <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 p-8 pt-24">
+      <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 px-4 py-8 md:p-8 pt-20 md:pt-24">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl font-bold text-yellow-400 mb-12">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-8 md:mb-12">
             Work Experience
           </h1>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-start">
             {/* Left side: Work Experience Cards */}
             <div className="space-y-6">
               {workExperiences.map((experience) => (

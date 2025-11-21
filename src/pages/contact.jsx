@@ -52,34 +52,34 @@ export default function Contact() {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 p-8">
-      <h1 className="text-5xl font-bold text-yellow-400 mb-8 ml-50 mb-25 mt-20">Contact me</h1>
+    <section className="min-h-screen bg-gradient-to-b from-blue-800 to-teal-400 px-4 py-8 md:p-8">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-8 mt-16 md:mt-20 text-center md:text-left">Contact me</h1>
 
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {/* Left side: intro and social icons */}
         <div>
-          <p className="text-white mb-4 text-lg">
+          <p className="text-white mb-4 text-base md:text-lg">
             Thank you for your interest in getting in touch!
           </p>
-          <p className="text-white mb-6">
+          <p className="text-white mb-6 text-sm md:text-base">
             I value open communication and welcome any inquiries, feedback, or
             collaboration opportunities. Please don't hesitate to get in touch
             with me by filling out the contact form.
           </p>
-          <div className="flex space-x-6">
+          <div className="flex space-x-6 justify-center md:justify-start">
             <a
               href="https://www.linkedin.com/in/ryan-tang-ab55192b1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-yellow-400 hover:text-yellow-200 transition-colors"
             >
-              <AiFillLinkedin size={64} />
+              <AiFillLinkedin className="w-12 h-12 md:w-16 md:h-16" />
             </a>
             <a
               href="mailto:ryant012015@gmail.com"
               className="text-yellow-400 hover:text-yellow-200 transition-colors"
             >
-              <AiOutlineMail size={64} />
+              <AiOutlineMail className="w-12 h-12 md:w-16 md:h-16" />
             </a>
           </div>
         </div>
@@ -139,11 +139,11 @@ export default function Contact() {
             </div>
           )}
 
-          <div className="flex justify-end">
+          <div className="flex justify-center md:justify-end">
             <button
               type="submit"
               disabled={isLoading}
-              className={`px-6 py-2 border border-yellow-400 text-yellow-400 rounded hover:bg-yellow-400 hover:text-blue-900 transition-colors ${
+              className={`px-6 py-3 md:px-8 border-2 border-yellow-400 text-yellow-400 rounded uppercase tracking-wider text-sm md:text-base hover:bg-yellow-400 hover:text-blue-900 transition-colors ${
                 isLoading ? 'opacity-50 cursor-not-allowed' : ''
               }`}
             >

@@ -56,7 +56,7 @@ export default function Sidebar() {
         </div>
 
         {/* Middle: navigation icons */}
-        <nav className="flex-1 flex flex-col items-center py-4 space-y-4 mt-55">
+        <nav className="flex-1 flex flex-col items-center py-4 space-y-4 mt-12 md:mt-20">
           {navItems.map(({ to, icon: Icon, label }) => (
             <NavLink
               key={to}

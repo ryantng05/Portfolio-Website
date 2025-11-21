@@ -7,20 +7,21 @@ import React from 'react';
  */
 export default function ProjectCard({ image, title, tech, href }) {
   return (
-    <div className="group relative block rounded-lg overflow-hidden shadow-lg h-95">
+    <div className="group relative block rounded-lg overflow-hidden shadow-lg h-64 sm:h-72 md:h-80 lg:h-95">
       {/* Background image */}
-      <div
-        className="w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${image})` }}
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-full object-cover"
       />
       {/* Bottom content container */}
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 flex flex-col space-y-1 z-10 h-30">
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-3 md:p-4 flex flex-col space-y-1 z-10 min-h-[100px]">
         {/* Title at bottom, slides up on hover */}
-        <h3 className="text-lg font-semibold text-white duration-300 group-hover:-translate-y-5">
+        <h3 className="text-base md:text-lg font-semibold text-white duration-300 group-hover:-translate-y-5">
           {title}
         </h3>
         {/* Tech stack at bottom, slides up on hover */}
-        <p className="text-sm text-white/90 duration-300 group-hover:-translate-y-5">
+        <p className="text-xs md:text-sm text-white/90 duration-300 group-hover:-translate-y-5">
           {tech}
         </p>
         {/* View button, hidden initially, slides up into place */}
@@ -29,7 +30,7 @@ export default function ProjectCard({ image, title, tech, href }) {
           target="_blank"
           rel="noopener noreferrer"
           className="
-            inline-block px-4 py-2 w-17 hover:bg-yellow-500 hover:border-yellow-500 border border-white text-white uppercase text-sm
+            inline-block px-3 py-2 md:px-4 w-fit hover:bg-yellow-500 hover:border-yellow-500 border border-white text-white uppercase text-xs md:text-sm
             transform translate-y-5 opacity-0
             transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100
           "
