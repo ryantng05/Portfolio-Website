@@ -11,13 +11,13 @@ const projects = [
     title: 'AI Code Reviewer',
     tech: 'NextJS, Typescript, OpenAI API',
     image: './src/assets/AICodeReviewer-page.jpg',
-    href: 'https://github.com/ryantng05/AiCodeReviewer',
+    href: 'https://ai-coder-reviewer.vercel.app/',
   },
   {
     title: 'Generative UI Designer',
     tech: 'NextJS, Typescript, OpenAI API',
     image: './src/assets/GenUIDesigner-page.webp',
-    href: 'https://github.com/ryantng05/GenerativeUIDesigner',
+    href: 'https://generative-ui-designer.vercel.app/',
   },
   // add more projects...
 ];
