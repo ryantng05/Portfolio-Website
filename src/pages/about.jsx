@@ -42,10 +42,10 @@ export default function About() {
 
     return(
         <section className='min-h-screen
-        px-4 py-8 md:p-8
+        pl-20 md:pl-24 pr-4 py-8 md:p-8 md:pl-24
         bg-gradient-to-b from-blue-800 to-teal-400'>
             <div className="max-w-7xl mx-auto">
-                <div className="mt-16 md:mt-20 font-bold text-yellow-400 text-3xl md:text-4xl lg:text-5xl mb-8 md:mb-10">
+                <div className="mt-4 md:mt-8 font-bold text-yellow-400 text-3xl md:text-4xl lg:text-5xl mb-8 md:mb-10">
                     <h1>About me</h1>
                 </div>
                 <div className="text-white">

@@ -4,10 +4,10 @@ export default function Home() {
 
     return(
         <section className='min-h-screen
-        px-4 py-8 md:p-8
+        pl-20 md:pl-24 pr-4 py-8 md:p-8 md:pl-24
         flex flex-col justify-center items-start
         bg-gradient-to-b from-blue-800 to-teal-400'>
-        <div className="max-w-7xl mx-auto w-full md:ml-12 lg:ml-20">
+        <div className="max-w-7xl w-full">
             <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2">
 
                 <h1>Hi</h1>
