@@ -1,22 +1,25 @@
 import ProjectCard from '../components/projectcard';
+import plMatchPredictorImg from '../assets/Premier-League-symbol.png';
+import aiCodeReviewerImg from '../assets/AICodeReviewer-page.jpg';
+import genUIDesignerImg from '../assets/GenUIDesigner-page.webp';
 
 const projects = [
   {
     title: 'PL Match Predictor',
     tech: 'DJango,Python, scikit-learn, Pandas',
-    image: '../src/assets/Premier-League-symbol.png',
+    image: plMatchPredictorImg,
     href: 'https://github.com/ryantng05/PLWebsite',
   },
   {
     title: 'AI Code Reviewer',
     tech: 'NextJS, Typescript, OpenAI API',
-    image: '../src/assets/AICodeReviewer-page.jpg',
+    image: aiCodeReviewerImg,
     href: 'https://ai-coder-reviewer.vercel.app/',
   },
   {
     title: 'Generative UI Designer',
     tech: 'NextJS, Typescript, OpenAI API',
-    image: '../src/assets/GenUIDesigner-page.webp',
+    image: genUIDesignerImg,
     href: 'https://generative-ui-designer.vercel.app/',
   },
   // add more projects...
