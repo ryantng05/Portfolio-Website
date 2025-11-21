@@ -25,7 +25,7 @@ export default function Sidebar() {
   ];
 
   const socialItems = [
-    { href: 'https://www.linkedin.com/in/ryan-tang-ab55192b1/', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'https://www.linkedin.com/in/ryan-tng/', icon: Linkedin, label: 'LinkedIn' },
     { href: 'https://github.com/ryantng05', icon: Github, label: 'GitHub' },
     { href: 'https://instagram.com/ryan.tng', icon: Instagram, label: 'Instagram' },
   ];
