@@ -6,12 +6,13 @@ const workExperiences = [
     id: 1,
     company: 'Academathon',
     role: 'Lead Software Engineer',
-    date: 'Jan-Present 2025',
+    date: 'Jan 2025 - Present',
     details: [
-      'Designed 30+ AWS Lambda Functions in AWS, strategically leveraging Lambda layers to increase processing speed by 35% and re-usability by 52%, resulting in cost savings of $1,000 per large scale deployment',
-      'Implemented 15+ serverless workflows using AWS Step Functions, seamlessly integrating REST APIs and rigorously tested with Postman, resulting in a 65% reduction in execution time and improved system reliability',
-      'Developed and maintained scalable microservices architecture using Spring Boot and Node.js',
-      'Collaborated with cross-functional teams to deliver high-quality solutions within tight deadlines',
+      'Led the development of a full-stack online tutoring platform, utilizing ReactJS for the frontend, Docker for thedatabase, and a Spring Boot backend',
+      'Integrated AWS S3 for secure user uploads, boosting scalability, performance, and data protection',
+      'Implemented seamlessly integrating REST APIs and rigorously tested with Postman, resulting in a 65% reduction in execution time and improved system reliability',
+      'Developed and maintained scalable architecture using Spring Boot and ReactJS',
+      'Implemented Stripe payments and an in-app wallet, streamlining checkout and increasing efficiency by 70%',
     ],
   },
   // Add more work experiences here
