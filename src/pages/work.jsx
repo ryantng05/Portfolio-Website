@@ -8,7 +8,7 @@ const workExperiences = [
     role: 'Lead Software Engineer',
     date: 'Jan 2025 - Present',
     details: [
-      'Led the development of a full-stack online tutoring platform, utilizing ReactJS for the frontend, Docker for thedatabase, and a Spring Boot backend',
+      'Led the development of a full-stack online tutoring platform, utilizing ReactJS for the frontend, PostgreSQL for the database, and a Spring Boot backend',
       'Integrated AWS S3 for secure user uploads, boosting scalability, performance, and data protection',
       'Implemented seamlessly integrating REST APIs and rigorously tested with Postman, resulting in a 65% reduction in execution time and improved system reliability',
       'Developed and maintained scalable architecture using Spring Boot and ReactJS',
