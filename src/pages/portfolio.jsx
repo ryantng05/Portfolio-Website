@@ -8,7 +8,7 @@ const projects = [
     title: 'PL Match Predictor',
     tech: 'DJango,Python, scikit-learn, Pandas',
     image: plMatchPredictorImg,
-    href: 'https://github.com/ryantng05/PLWebsite',
+    href: 'https://pl-predictor-website.vercel.app/',
   },
   {
     title: 'AI Code Reviewer',
