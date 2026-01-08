@@ -26,7 +26,7 @@ export default function Header() {
 
   const socialItems = [
     { href: 'https://www.linkedin.com/in/ryan-tng/', icon: Linkedin, label: 'LinkedIn' },
-    { href: 'https://github.com/ryantng05', icon: Github, label: 'GitHub' },
+    { href: 'https://github.com/ryan-tng', icon: Github, label: 'GitHub' },
     { href: 'https://instagram.com/ryan.tng', icon: Instagram, label: 'Instagram' },
   ];
 
