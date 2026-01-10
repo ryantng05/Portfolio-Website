@@ -9,10 +9,11 @@ const workExperiences = [
     date: 'Jan 2025 - Present',
     details: [
       'Led the development of a full-stack online tutoring platform, utilizing ReactJS for the frontend, PostgreSQL for the database, and a Spring Boot backend',
-      'Integrated AWS S3 for secure user uploads, boosting scalability, performance, and data protection',
-      'Implemented seamlessly integrating REST APIs and rigorously tested with Postman, resulting in a 65% reduction in execution time and improved system reliability',
+      'Launched a full-stack tutoring platform for 50+ users, utilizing React and Spring Boot to architect RESTful APIsthat handle concurrent requests and reduce onboarding time by 40%',
+      'Implemented Stripe payments, reducing average checkout time from 10 seconds to 3 seconds (70% reduction) by streamlining payment flows and consolidating transactions using Stripe API and React Frontend',
+      'Increased upload throughput by 60% by architecting a secure AWS S3 pipeline with server-side encryption for user data offloading',
       'Developed and maintained scalable architecture using Spring Boot and ReactJS',
-      'Implemented Stripe payments and an in-app wallet, streamlining checkout and increasing efficiency by 70%',
+      'Enhanced cloud storage scalability and reduced monthly overhead by 30% by architecting AWS S3 automated data retention policies, ensuring cost-effective management of growing user datasets',
     ],
   },
   // Add more work experiences here
